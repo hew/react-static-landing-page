@@ -1,0 +1,44 @@
+{
+  "name": "react-static-landing-page",
+  "version": "1.0.0",
+  "description": "A marketing-ready landing page.",
+  "author": "Matthew Jones",
+  "private": true,
+  "scripts": {
+    "start": "concurrently 'npm run build' 'npm run scripts' 'npm run css'",
+    "watch-css": "postcss -w -c css/src/styles.css postcss.config.json",
+    "build": "static-react js/components/Root.js > index.html",
+    "scripts": "babel js/static --out-file js/scripts.js",
+    "normalize": "postcss node_modules/normalize.css/normalize.css -u cssnano -o css/normalize.css",
+    "css": "postcss -c postcss.config.json css/src/index.css",
+    "minify": "postcss css/dist/styles.css -u cssnano -o css/dist/styles.min.css",
+    "test": "standard js/components"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "babel-cli": "^6.7.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "concurrently": "^2.0.0",
+    "cssnano": "^3.4.0",
+    "normalize.css": "^3.0.3",
+    "postcss-cli": "^2.3.2",
+    "postcss-color-function": "^2.0.0",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-import": "^7.1.3",
+    "react": "15.0.0",
+    "standard": "^6.0.8",
+    "static-react": "^3.1.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "jquery": "^2.2.3",
+    "scrollreveal": "^3.1.4"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-es2015",
+      "react"
+    ]
+  }
+}
