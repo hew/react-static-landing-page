@@ -2,9 +2,11 @@
 
 # React Static Landing Page
 
-This repo leverages [`react-static`](http://github.com/jxnblk/react-static) to
+This repo leverages [`static-react`](http://github.com/jxnblk/static-react) to
 build a marketing-ready, static HTML page built from **stateless React components**,
-which can then manipulated by jQuery and other global scripts.
+which can then manipulated by jQuery and other global scripts. 
+
+Basically, this is a project boilerplate. Most of the heavy lifting is being done by `static-react`.
 
 ### Directory Structure
 
