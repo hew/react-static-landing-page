@@ -11,5 +11,4 @@ which can then manipulated by jQuery and other global scripts.
 The `js/components` folder is for *stateless* React components. These are compiled
 from the `components/root.jsx' file into a static format.
 
-The `js/static` folder is where you will write your messy `window` object code. The
-`js/static/index.js` is the entrypoint for [Rollup](http://rollupjs.org/).
+The `js/static` folder is where you will write your messy `window` object code, which will be concatenated into one `scripts` file.
