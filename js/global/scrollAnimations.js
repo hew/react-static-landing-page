@@ -8,3 +8,5 @@ const settings = {
 }
 
 const scrollAnimations = window.sr = ScrollReveal().reveal('.fadeUp', settings, 60)
+
+// beep

@@ -10,3 +10,5 @@ var settings = {
 };
 
 var scrollAnimations = window.sr = ScrollReveal().reveal('.fadeUp', settings, 60);
+
+// beep
