@@ -24,7 +24,7 @@ $ npm i
 
 ```shell
 
-$ npm run scripts
+$ npm run start
 
 # Watches and builds:
 # js/components
