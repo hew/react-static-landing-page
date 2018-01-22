@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "animate.css": "^3.5.1",
-    "jquery": "^2.2.3",
+    "jquery": "^3.0.0",
     "scrollreveal": "^3.1.4"
   },
   "babel": {
